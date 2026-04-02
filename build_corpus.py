@@ -3,7 +3,7 @@ import os
 import sys
 import argparse
 
-HEADER_SIZE = 128
+HEADER_SIZE = 8
 
 def make_fuzz_input(shader_src: bytes) -> bytes:
     header = b"\x00" * HEADER_SIZE
